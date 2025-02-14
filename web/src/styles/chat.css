@@ -1,0 +1,31 @@
+.chat-box {
+  transition: all 0.3s ease;
+}
+
+.chat-box:hover {
+  transform: translateY(-1px);
+}
+
+.chat-flex::-webkit-scrollbar {
+  width: 6px;
+}
+
+.chat-flex::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.chat-flex::-webkit-scrollbar-thumb {
+  background-color: rgba(156, 163, 175, 0.5);
+  border-radius: 20px;
+}
+
+.chat-text-container::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100px;
+  background: linear-gradient(to bottom, transparent, var(--background) 90%);
+  pointer-events: none;
+}

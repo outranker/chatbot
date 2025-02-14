@@ -1,0 +1,34 @@
+{
+  "compilerOptions": {
+    "module": "ESNext",
+    "target": "ESNext",
+    "sourceMap": true,
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "noEmit": true /* Do not emit outputs. */,
+    "strict": true,
+    "moduleResolution": "node",
+    "typeRoots": ["./node_modules/@types"],
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "noStrictGenericChecks": false,
+    "baseUrl": "./",
+    "paths": {
+      "config": ["./src/config/index.ts"],
+      "hooks": ["./src/hooks/index.ts"],
+      "plugins": ["./src/plugins/index.ts"],
+      "@models/*": ["./src/models/*"],
+      "@models": ["./src/models/index.ts"],
+      "jobs": ["./src/jobs/index.ts"],
+      "schemas": ["./src/schemas/index.ts"],
+      "@utils": ["./src/utils/index.ts"],
+      "types": ["./src/types/index.ts"],
+      "admin/*": ["./src/admin/*"],
+      "client/*": ["./src/client/*"]
+    }
+  },
+  "include": ["./declarations/*.d.ts", "./src/**/*"],
+  "exclude": ["./node_modules"]
+}
